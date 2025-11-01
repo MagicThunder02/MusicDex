@@ -1,0 +1,32 @@
+Person: You are a senior computer engineer with expertise in Android/iOS application programming.
+Context: Android/iOS, Application, Pokedex, Shazam
+
+Team size: Two graduate software engeneers expert in python.
+
+I want to write “MusicDex,” an Android/iOS app that is a musical Pokedex.
+I want people to be able to scan a song they hear, just like with Shazam, recognize it, and add it to their own songs so they can listen to it again.
+
+Target: Pokemon and Music nerds
+
+Workflow idea:
+On the main page, I have a cassette tape in the center.
+Swiping this cassette downwards enters a tape recorder and starts spinning to record. Meanwhile, an algorithm recognizes the song.
+When it has finished recording, the cassette comes out of the tape recorder and a sticker with the album is stuck on it.
+Swiping the cassette upwards gives you a new cassette to record a new song.
+Swiping to the left changes the screen and takes you to a screen with information about that song: when and where it was recorded, who the artist is, and the album. 
+Clicking on the artist takes you to the artist's real MusicDex, where you can see their photo and a list of all their songs. The list is organized just like a Pokédex. It is a list of items, each of which has 
+1) a small photo of the album
+2) an icon with a cassette tape
+3) the song ID within the artist
+4) the song name
+The item appears with a colored cassette tape and all the information if the song has been recorded; otherwise, everything is gray and there are dots instead of information. Only the id of the song is shown.
+
+Sharing:
+Utilization requires an account. Information on captured songs is kept on a server (limited to no local persistence). In the future we may want to add song sharing/trading among players.
+
+Constraint: Keep the amount of infrastracture (code, data) to be maintained minimal through the use of external api-s and multi-platform coding frameworks. Avoid storing queriable information about songs and artists. Only store captures and user-related informations.
+Constraint: Minimimize the use of non-free (of charge) software
+
+Suggestion: Python backend (after brief feasibility analysis)
+
+Request: Write a full formal, coherent, complete and correct design document. Apply separation of concerns, i.e. avoid unnecessary information for this level of developement.
